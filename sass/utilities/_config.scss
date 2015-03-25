@@ -5,20 +5,20 @@
 
 //  - Imports
 //  -----------------------------------
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/breakpoint-2.5.0/stylesheets/breakpoint";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass";
+@import "susy";
+@import "breakpoint";
+@import "compass";
 
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/box-sizing";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/box-shadow";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/transition";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/transform";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/text-shadow";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/border-radius";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/user-interface";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/layout/sticky-footer";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/typography/vertical_rhythm";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/clearfix";
+@import "compass/css3/box-sizing";
+@import "compass/css3/box-shadow";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import "compass/css3/text-shadow";
+@import "compass/css3/border-radius";
+@import "compass/css3/user-interface";
+@import "compass/layout/sticky-footer";
+@import "compass/typography/vertical_rhythm";
+@import "compass/utilities/general/clearfix";
 
 
 //  - Grid
