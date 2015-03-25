@@ -9,6 +9,15 @@ Theme switcher<br />
 Inner page navigation<br />
 And 3 extra games to the '.json' file since it was boring working with only 3 games displaying :)<br />
 
+The tools Iv'e used for this project are:<br />
+AngularJS<br />
+Angular-seed<br />
+Sass<br />
+Compass<br />
+Susy<br />
+Breakpoint<br />
+Grunt<br />
+
 
 ## Project Goals
 
@@ -142,6 +151,7 @@ npm run protractor
 <b>Add integration tests</b><br />
 <b>Add End-to-End tests</b><br />
 <b>Check for cross browser compatibility</b><br />
+<b>Work on the Gruntfile, it's not good enough - should add css minifier and some other stuff</b><br />
 
 <br />
 <br />
