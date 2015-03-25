@@ -9,14 +9,14 @@ Theme switcher<br />
 Inner page navigation<br />
 And 3 extra games to the '.json' file since it was boring working with only 3 games displaying :)<br />
 
-The tools Iv'e used for this project are:<br />
-AngularJS<br />
-Angular-seed<br />
-Sass<br />
-Compass<br />
-Susy<br />
-Breakpoint<br />
-Grunt<br />
+The tools I've used for this project are:<br />
+[AngularJS](https://angularjs.org/)<br />
+[Angular-seed](https://github.com/angular/angular-seed)<br />
+[Sass](http://sass-lang.com/)<br />
+[Compass](http://compass-style.org/)<br />
+[Susy](http://susy.oddbird.net/)<br />
+[Breakpoint](http://breakpoint-sass.com/)<br />
+[Grunt](http://gruntjs.com/)
 
 
 ## Project Goals
