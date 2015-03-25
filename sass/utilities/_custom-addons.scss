@@ -1,0 +1,30 @@
+/* ============================================================================
+	# Utilities - Custom addons
+============================================================================= */
+
+
+//  - Import google fonts
+//  -----------------------------------
+@if variable-exists(font-url--google) {
+	@import url($font-url--google);
+}
+
+
+//  - Calculate em values
+//  -----------------------------------
+@function em($target, $context: $base-font-size) {
+	@return ($target / $context) * 1em;
+}
+
+
+//  - Debug vertical rhythm
+//  -----------------------------------
+.rhythm-debug {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	z-index: 999999;
+	@include debug-vertical-alignment;
+} // .rhythm-debug

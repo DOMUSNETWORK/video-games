@@ -1,0 +1,74 @@
+/* ============================================================================
+	# Utilities - Colors
+============================================================================= */
+
+//  - Base
+//  -----------------------------------
+$color-site-background: $base-color-secondary;
+$color-base-text: $base-color-grey;
+$color-base-links: $base-color-accent;
+$color-input-text: $base-color-secondary;
+$color-input-background: $white-opaque-4;
+$color-input-border: $white-opaque-2;
+$color-input-placeholder: $base-color-primary;
+$color-radio-text: $base-color-secondary;
+$color-radio-background: $base-color-secondary;
+$color-radio-background-checked: $base-color-white;
+$color-select-text: $base-color-secondary;
+$color-select-background: $white-opaque-4;
+$color-select-border: $white-opaque-2;
+$color-footer-background: $base-color-primary;
+$color-footer-link: $base-color-secondary;
+$color-footer-link-hover: $base-color-white;
+
+
+//  - Helpers
+//  -----------------------------------
+$color-btn-text: $base-color-white;
+$color-btn-background: $base-color-accent;
+$color-btn-background-hover: $base-color-secondary;
+
+
+//  - Module - Search-bar
+//  -----------------------------------
+$color-search-header-text: $base-color-light-white;
+$color-search-header-shadow: $base-color-secondary;
+$color-search-body-text: $base-color-light-white;
+$color-search-background: $base-color-primary;
+$color-search-background-hover: $base-color-white;
+
+
+//  - Module - Games-list
+//  -----------------------------------
+$color-games-list-background: $base-color-light-white;
+$color-game-list-border-bottom: $base-color-primary;
+$color-game-list-border-bottom-hover: $base-color-absolute-white;
+$color-game-list-shadow-hover: $black-opaque-4;
+
+
+//  - Module - Game-card
+//  -----------------------------------
+$color-game-card-image-border: $base-color-absolute-white;
+$color-game-card-info-name: $base-color-accent;
+$color-game-card-info-release: $base-color-grey;
+$color-game-card-info-release-year: $base-color-primary;
+$color-game-card-info-price: $base-color-grey;
+$color-game-card-info-price-currency: $base-color-secondary;
+
+
+//  - Module - Game-details
+//  -----------------------------------
+$color-game-details-container-background: $base-color-light-white;
+$color-game-details-name: $base-color-primary;
+$color-game-details-image-border: $base-color-absolute-white;
+$color-game-details-info-release: $base-color-grey;
+$color-game-details-info-release-year: $base-color-primary;
+$color-game-details-info-price: $base-color-grey;
+$color-game-details-info-price-currency: $base-color-secondary;
+$color-game-details-back-btn-shadow: $base-color-white;
+$color-game-details-back-btn-hover: $base-color-secondary;
+
+
+//  - Module - Theme-switcher
+//  -----------------------------------
+$color-theme-switcher-container-background: $base-color-primary;

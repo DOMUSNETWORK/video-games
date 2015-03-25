@@ -1,0 +1,23 @@
+/* ============================================================================
+	# Modules - Theme switcher
+============================================================================= */
+
+.theme-switcher {
+	@extend %full-width-and-float;
+	@extend %global-center-text;
+
+	&__radios {
+		@extend %global-bottom-border-radius;
+		@extend %center-elemets;
+		line-height: rhythm(1.5);
+		background: $color-theme-switcher-container-background;
+
+		&-item {
+			display      : inline-block;
+			margin-right : rhythm(0.5);
+
+			&:last-child { margin-right : 0; }
+			// &:last-child
+		} // &-item
+	} // &__radios
+} // .theme-switcher

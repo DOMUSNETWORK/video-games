@@ -1,0 +1,37 @@
+<div class="search-bar">
+
+	<div class="search-bar__header">
+		<i class="fa fa-gamepad"></i>
+		<h1>Games Directory</h1>
+	</div>
+
+
+	<div class="search-bar__field">
+		<label class="hide">Search:</label>
+		<input ng-model="barQuery" type="text" placeholder="Search for games" autofocus/>
+		<span class="search-bar__field-icon"><i class="fa fa-search"></i></span>
+	</div>
+
+	<div class="search-bar__options">
+		<label class="formgroup">
+			By:
+			<select ng-model="barOrder">
+				<option value="name">Name</option>
+				<option value="price">Price</option>
+				<option value="['release-year']">Release year</option>
+			</select>
+		</label>
+	</div>
+
+	<div class="search-bar__radios">
+		<div class="search-bar__radios-item">
+			<input type="radio" ng-model="barDirection" id="radio01" name="direction" />
+			<label for="radio01"><span></span>Ascending</label>
+		</div>
+
+		<div class="search-bar__radios-item">
+			<input type="radio" ng-model="barDirection" id="radio02" name="direction" value="reverse"/>
+			<label for="radio02"><span></span>Descending</label>
+		</div>
+	</div>
+</div>

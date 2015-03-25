@@ -1,0 +1,27 @@
+/* ============================================================================
+	# Modules - Game-card
+============================================================================= */
+
+.game-card {
+	&__image {
+		@extend %game-image;
+		border: 1px solid $color-game-card-image-border;
+	} // &__image
+
+	&__info {
+		@extend %global-clear-fix;
+
+		&-name { color: $color-game-card-info-name; } // &-name
+		&-release-year {
+			color: $color-game-card-info-release;
+
+			span { color: $color-game-card-info-release-year; } // span
+		} // &-release-year
+		&-price {
+			@extend %game-price;
+			color: $color-game-card-info-price;
+
+			b { color: $color-game-card-info-price-currency; } // b
+		} // price
+	} // &__info
+} // .game-card

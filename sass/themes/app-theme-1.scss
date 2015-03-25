@@ -1,0 +1,174 @@
+/* ============================================================================
+	# Theme
+============================================================================= */
+
+
+//  - Theme Palette
+//  -----------------------------------
+$base-color-grey: #546E7A;
+$base-color-light-white: #ECEFF1;
+$base-color-white: #FDF6E3;
+$base-color-absolute-white: #fff;
+
+$base-color-primary: #9C27B0;
+$base-color-secondary: #311B92;
+$base-color-accent: #FF9100;
+
+$white-opaque-4: rgba(255,255,255,0.4);
+$white-opaque-2: rgba(255,255,255,0.2);
+$black-opaque-4: rgba(0,0,0,0.4);
+
+
+//  - Imports
+//  -----------------------------------
+@import "utilities/colors";
+
+@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/text-shadow";
+@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/box-shadow";
+@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/user-interface";
+
+
+//  - Base
+//  -----------------------------------
+html { background-color: $color-site-background; } // html
+
+#{headings(1,6)} {
+	color: $color-base-text;
+	@include single-text-shadow(1px, 1px, 0, 0, $base-color-absolute-white);
+} // #{headings(1,6)}
+
+p { color: $color-base-text; } // p
+a { color: $color-base-links; } // a
+
+input {
+	color: $color-input-text;
+	background: $color-input-background;
+	border-color: $color-input-border;
+} // input
+
+input[type="text"] { @include input-placeholder { color: $color-input-placeholder; } } // input[type="text"]
+input[type="radio"] + label { color: $color-radio-text; }
+input[type="radio"] + label span { background-color: $color-radio-background; } // input[type="radio"] + label span
+input[type="radio"]:checked + label span { background-color: $color-radio-background-checked; } // input[type="radio"]:checked + label span
+
+select {
+	border-color: $color-select-border;
+	color: $color-select-text;
+	background-color: $color-select-background;
+} // select
+
+footer {
+	background: $color-footer-background;
+
+	a { color: $color-footer-link; } // a
+	a:hover { color: $color-footer-link-hover; } // a:hover
+} // footer
+
+
+//  - Helpers
+//  -----------------------------------
+.btn {
+	color: $color-btn-text;
+	background: $color-btn-background;
+
+	&:hover { background: $color-btn-background-hover; } // &:hover
+} // .btn
+
+
+//  - Module - Search-bar
+//  -----------------------------------
+.search-bar {
+	color: $color-search-body-text;
+	background: $color-search-background;
+
+	&__header {
+		h1 {
+			@include single-text-shadow(2px, 3px, 0, 0, $color-search-header-shadow);
+			color: $color-search-header-text;
+		} // h1
+
+		i {
+			@include single-text-shadow(-2px, 3px, 0, 0, $color-search-header-shadow);
+			color: $color-search-header-text;
+		} // i
+	} // &__header
+} // .search-bar
+
+
+//  - Module - Games-list
+//  -----------------------------------
+.games-list {
+	background: $color-games-list-background;
+	opacity: .95;
+
+	&__item {
+		border-bottom-color: $color-game-list-border-bottom;
+		opacity: .9;
+
+		&:hover {
+			@include box-shadow(0 3px 6px $color-game-list-shadow-hover);
+			border-bottom-color: $color-game-list-border-bottom-hover;
+			background: $color-search-background-hover;
+			opacity: 1;
+		} // &:hover
+	} // &__item
+} // .games-list
+
+
+//  - Module - Game-card
+//  -----------------------------------
+.game-card {
+	&__image {
+		border: 1px solid $color-game-card-image-border;
+	} // &__image
+
+	&__info {
+		&-name { color: $color-game-card-info-name; } // &-name
+		&-release-year {
+			color: $color-game-card-info-release;
+
+			span { color: $color-game-card-info-release-year; } // span
+		} // &-release-year
+		&-price {
+			color: $color-game-card-info-price;
+
+			b { color: $color-game-card-info-price-currency; } // b
+		} // price
+	} // &__info
+} // .game-card
+
+
+//  - Module - Game-details
+//  -----------------------------------
+.game-details {
+	background: $color-game-details-container-background;
+
+	&__name { color: $color-game-details-name; } // &__name
+
+	&__info {
+		&-image { border: 1px solid $color-game-details-image-border; } // &-image
+
+		&-release-year {
+			color: $color-game-details-info-release;
+
+			span { color: $color-game-details-info-release-year; } // span
+		} // &-release-year
+
+		&-price {
+			color: $color-game-details-info-price;
+
+			b { color: $color-game-details-info-price-currency; } // b
+		} // &-price
+	} // &__info
+
+	&__back-btn {
+		@include single-text-shadow(1px, 1px, 0, 0, $color-game-details-back-btn-shadow);
+
+		&:hover { color: $color-game-details-back-btn-hover; }
+	} // &__back-btn
+} // .game-details
+
+
+//  - Module - Theme-switcher
+//  -----------------------------------
+.theme-switcher__radios { background: $color-theme-switcher-container-background; } // .theme-switcher

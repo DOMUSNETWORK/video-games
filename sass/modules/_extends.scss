@@ -1,0 +1,31 @@
+/* ============================================================================
+	# Modules - Extends
+============================================================================= */
+
+%center-elemets { margin: 0 auto; } // %center-elemets
+%global-padding { padding: rhythm(1); } // %global-padding
+%full-rhythm-marin-bottom {  @include margin-trailer; } // %full-rhythm-marin-bottom
+%half-rhythm-marin-bottom { @include margin-trailer(0.5); } // %half-rhythm-marin-bottom
+%global-border-radius { @include border-radius(rhythm(0.75)); } // %global-border-radius
+%global-bottom-border-radius { @include border-radius(0 0 rhythm(0.75) rhythm(0.75)); } // %global-bottom-border-radius
+%global-clear-fix { @include pie-clearfix; } // %global-clear-fix
+%global-center-text { text-align: center; } // %global-center-text
+
+%full-width-and-float {
+	width: 100%;
+	float: left;
+} // $search-bar-position-and-float
+
+%game-image {
+	@include border-radius(rhythm(0.5));
+	width: 40%;
+	display: block;
+	float: left;
+	margin-right: rhythm(0.5);
+} // %game-image
+
+%game-price {
+	display : block;
+	line-height: rhythm(1);
+} // %game-price
+

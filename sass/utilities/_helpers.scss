@@ -1,0 +1,37 @@
+/* ============================================================================
+	# Utilities - Helpers
+============================================================================= */
+
+
+//  - Buttons
+//  -----------------------------------
+.btn { width: rhythm(2); } // .btn
+
+.btn {
+	@include adjust-font-size-to(18px, 2);
+	@include user-select(none);
+	display: inline-block;
+	border-radius: rhythm(0.25);
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	color: $color-btn-text;
+	background: $color-btn-background;
+
+	&:hover { background: $color-btn-background-hover; } // &:hover
+
+	&.btn-left { float: left; } // &.btn-left
+
+	&.btn-right { float: right; } // &.btn-right
+} // .btn
+
+
+//  - Misc
+//  -----------------------------------
+.hide { display : none; } // .hide
+
+.formgroup {
+	display: inline;
+	width: auto;
+} // .formgroup

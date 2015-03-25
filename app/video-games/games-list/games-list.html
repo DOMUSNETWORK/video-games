@@ -1,0 +1,7 @@
+<div class="app-video-games">
+	<div search-bar filter="query" order="listCtrl.gamesOrder" direction="listCtrl.direction"></div>
+
+	<ul class="games-list">
+		<li game-card card-data="game" ng-animate="'animate'" ng-repeat="game in listCtrl.games | filter: query | orderBy: listCtrl.gamesOrder:listCtrl.direction" ng-class="{'games-list__item--last': $last}"></li>
+	</ul>
+</div>

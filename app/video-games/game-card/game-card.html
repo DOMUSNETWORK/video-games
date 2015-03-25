@@ -1,0 +1,11 @@
+<li class="games-list__item">
+	<a class="game-card"href="#/video-games/{{cardData.id}}">
+		<img class="game-card__image" ng-src="{{cardData.image}}" alt="{{cardData.name}}"/>
+
+		<div class="game-card__info">
+			<h2 class="game-card__info-name">{{ cardData.name }}</h2>
+			<h3 class="game-card__info-release-year">Release year: <span>{{ cardData["release-year"] }}</span></h3>
+			<span class="game-card__info-price">Price: <b>{{ cardData.price | gamePrice }}</b></span>
+		</div>
+	</a>
+</li>

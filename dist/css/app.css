@@ -1,0 +1,669 @@
+/* ============================================================================
+	# Utilities - Config
+============================================================================= */
+/* ============================================================================
+	# Utilities - Colors
+============================================================================= */
+/* ============================================================================
+	# Utilities - Custom addons
+============================================================================= */
+@import url("http://fonts.googleapis.com/css?family=Noto+Sans:400,700|Luckiest+Guy|Francois+One");
+.rhythm-debug {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  -moz-background-size: 100% 1.5em;
+  -o-background-size: 100% 1.5em;
+  -webkit-background-size: 100% 1.5em;
+  background-size: 100% 1.5em;
+  background-position: left top;
+}
+
+/* ============================================================================
+	# Utilities - Helpers
+============================================================================= */
+.btn {
+  width: 3em;
+}
+
+.btn {
+  font-size: 1.125em;
+  line-height: 2.66667em;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-block;
+  border-radius: 0.375em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #FDF6E3;
+  background: #00897B;
+}
+.btn:hover {
+  background: #BF360C;
+}
+.btn.btn-left {
+  float: left;
+}
+.btn.btn-right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.formgroup {
+  display: inline;
+  width: auto;
+}
+
+/* ============================================================================
+	# Base - Base
+============================================================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #BF360C;
+  min-height: 100%;
+  height: auto;
+}
+
+body {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Francois One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  *zoom: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: #546E7A;
+  text-shadow: 1px 1px 0 #fff;
+  text-shadow: 1px 1px 0 0 #fff;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+p {
+  color: #546E7A;
+}
+
+a {
+  text-decoration: none;
+  color: #00897B;
+}
+
+input {
+  line-height: 1.5em;
+  font-family: "Francois One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  padding: 11px 3em 11px 15px;
+  color: #BF360C;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75em;
+  outline: 0;
+}
+
+input[type="text"]:-moz-placeholder {
+  color: #EF6C00;
+  font-style: italic;
+}
+input[type="text"]::-moz-placeholder {
+  color: #EF6C00;
+  font-style: italic;
+}
+input[type="text"]:-ms-input-placeholder {
+  color: #EF6C00;
+  font-style: italic;
+}
+input[type="text"]::-webkit-input-placeholder {
+  color: #EF6C00;
+  font-style: italic;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  color: #BF360C;
+}
+
+input[type="radio"] + label span {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: -4px 6px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #BF360C;
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #FDF6E3;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -moz-transition: background-color 400ms linear;
+  -o-transition: background-color 400ms linear;
+  -webkit-transition: background-color 400ms linear;
+  transition: background-color 400ms linear;
+}
+
+select {
+  font-size: 1em;
+  line-height: 1.5em;
+  -moz-border-radius: 0.75em;
+  -webkit-border-radius: 0.75em;
+  border-radius: 0.75em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-family: "Francois One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline;
+  padding: 5px 10px;
+  margin-left: 0.75em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-overflow: '';
+  color: #BF360C;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNy43cHgiIGhlaWdodD0iNC4zcHgiIHZpZXdCb3g9IjAgMCA3LjcgNC4zIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA3LjcgNC4zIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiM5OTk5OTkiIGQ9Ik03LjEsMC4xQzYuNywwLjUsMy45LDMuMiwzLjksMy4yUzEsMC41LDAuNiwwLjFTMCwwLjcsMCwwLjdsMy45LDMuNmwzLjgtMy42QzcuNywwLjcsNy41LTAuMyw3LjEsMC4xeiIvPg0KPC9zdmc+DQo=");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  outline: 0;
+  cursor: pointer;
+}
+
+footer {
+  padding: 1.5em;
+  background: #EF6C00;
+  text-align: center;
+}
+footer a {
+  color: #BF360C;
+}
+footer a:hover {
+  color: #FDF6E3;
+}
+
+/* ============================================================================
+	# Base - Index
+============================================================================= */
+.app-video-games {
+  -moz-transition: all 650ms ease-out;
+  -o-transition: all 650ms ease-out;
+  -webkit-transition: all 650ms ease-out;
+  transition: all 650ms ease-out;
+}
+
+/* ============================================================================
+	# Layout - Index
+============================================================================= */
+.wrapper {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.25em;
+  padding-bottom: 6em;
+}
+.wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 501px) {
+  .wrapper {
+    padding: 2.25em 0 6em;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -4.5em;
+}
+.wrapper .root-footer {
+  height: 4.5em;
+}
+
+.main-footer {
+  clear: both;
+  position: relative;
+  height: 4.5em;
+}
+
+/* ============================================================================
+	# Layout - Theme-switcher
+============================================================================= */
+.theme-switcher__radios {
+  width: 90%;
+  min-width: 320px;
+  max-width: 500px;
+}
+
+/* ============================================================================
+	# Layout - Search-bar
+============================================================================= */
+.search-bar {
+  width: 90%;
+  min-width: 320px;
+  max-width: 500px;
+}
+
+/* ============================================================================
+	# Layout - Games list
+============================================================================= */
+.games-list {
+  width: 50%;
+  min-width: 290px;
+  max-width: 380px;
+}
+
+/* ============================================================================
+	# Layout - Game card
+============================================================================= */
+.game-card__image {
+  max-width: 83.5px;
+}
+
+/* ============================================================================
+	# Layout - Game details
+============================================================================= */
+.game-details {
+  width: 90%;
+  min-width: 320px;
+  max-width: 620px;
+}
+
+/* ============================================================================
+	# Modules - Extends
+============================================================================= */
+.search-bar, .games-list, .game-details, .theme-switcher__radios {
+  margin: 0 auto;
+}
+
+.search-bar, .game-details {
+  padding: 1.5em;
+}
+
+.search-bar__field, .game-details {
+  margin-bottom: 1.5em;
+}
+
+.search-bar__header, .search-bar__options, .game-details__navigation {
+  margin-bottom: 0.75em;
+}
+
+.search-bar, .game-details {
+  -moz-border-radius: 1.125em;
+  -webkit-border-radius: 1.125em;
+  border-radius: 1.125em;
+}
+
+.games-list, .games-list__item--last, .theme-switcher__radios {
+  -moz-border-radius: 0 0 1.125em 1.125em;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 1.125em 1.125em;
+}
+
+.search-bar, .games-list__item, .game-card__info, .game-details, .game-details__info {
+  *zoom: 1;
+}
+.search-bar:after, .games-list__item:after, .game-card__info:after, .game-details:after, .game-details__info:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.search-bar__field-icon, .search-bar__radios, .game-details__name, .theme-switcher {
+  text-align: center;
+}
+
+.search-bar__header, .search-bar__field, .search-bar__options, .search-bar__radios, .game-details__navigation, .game-details__name, .game-details__back-btn, .theme-switcher {
+  width: 100%;
+  float: left;
+}
+
+.game-card__image, .game-details__info-image {
+  -moz-border-radius: 0.75em;
+  -webkit-border-radius: 0.75em;
+  border-radius: 0.75em;
+  width: 40%;
+  display: block;
+  float: left;
+  margin-right: 0.75em;
+}
+
+.game-card__info-price, .game-details__info-price {
+  display: block;
+  line-height: 1.5em;
+}
+
+/* ============================================================================
+	# Modules - Search-bar
+============================================================================= */
+.search-bar {
+  color: #ECEFF1;
+  background: #EF6C00;
+}
+.search-bar__header {
+  position: relative;
+  padding-left: 3em;
+}
+.search-bar__header h1 {
+  text-shadow: 2px 3px 0 #BF360C;
+  text-shadow: 2px 3px 0 0 #BF360C;
+  font-family: "Luckiest Guy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ECEFF1;
+}
+.search-bar__header i {
+  font-size: 2.25em;
+  line-height: 0.66667em;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  text-shadow: -2px 3px 0 #BF360C;
+  text-shadow: -2px 3px 0 0 #BF360C;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  vertical-align: middle;
+  color: #ECEFF1;
+}
+.search-bar__field {
+  position: relative;
+}
+.search-bar__field-icon {
+  width: 3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.search-bar__field-icon i {
+  font-size: 1.5em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.search-bar__options {
+  text-align: right;
+}
+.search-bar__radios {
+  line-height: 2.25em;
+}
+.search-bar__radios-item {
+  display: inline-block;
+  margin-right: 0.75em;
+}
+.search-bar__radios-item:last-child {
+  margin-right: 0;
+}
+@media (min-width: 501px) {
+  .search-bar__options {
+    width: auto;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .search-bar__radios {
+    width: auto;
+    margin-left: 1.5em;
+    text-align: left;
+  }
+}
+
+/* ============================================================================
+	# Modules - Games-list
+============================================================================= */
+.games-list {
+  background: #ECEFF1;
+  opacity: .95;
+}
+.games-list__item {
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
+  padding-bottom: 0.6875em;
+  padding: 0.75em 0.75em 0.6875em 0.75em;
+  border-bottom-color: #EF6C00;
+  opacity: .9;
+}
+.games-list__item:hover {
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  border-bottom-color: #fff;
+  background: #FDF6E3;
+  opacity: 1;
+}
+.games-list__item--last {
+  padding-bottom: 0.75em;
+  border-bottom: none;
+}
+.games-list__item--last:hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.games-list__item a {
+  display: block;
+}
+
+/* ============================================================================
+	# Modules - Game-card
+============================================================================= */
+.game-card__image {
+  border: 1px solid #fff;
+}
+.game-card__info-name {
+  color: #00897B;
+}
+.game-card__info-release-year {
+  color: #546E7A;
+}
+.game-card__info-release-year span {
+  color: #EF6C00;
+}
+.game-card__info-price {
+  color: #546E7A;
+}
+.game-card__info-price b {
+  color: #BF360C;
+}
+
+/* ============================================================================
+	# Modules - Game-details
+============================================================================= */
+.game-details {
+  background: #ECEFF1;
+}
+.game-details__name {
+  margin-bottom: 0.75em;
+  color: #EF6C00;
+}
+.game-details__info {
+  float: left;
+}
+.game-details__info-image {
+  max-width: 150px;
+  border: 1px solid #fff;
+}
+.game-details__info-release-year {
+  color: #546E7A;
+}
+.game-details__info-release-year span {
+  color: #EF6C00;
+}
+.game-details__info-price {
+  color: #546E7A;
+}
+.game-details__info-price b {
+  color: #BF360C;
+}
+.game-details__info-desc {
+  margin-top: 0.75em;
+}
+.game-details__back-btn {
+  margin-top: 1.5em;
+  text-shadow: 1px 1px 0 #FDF6E3;
+  text-shadow: 1px 1px 0 0 #FDF6E3;
+  display: block;
+}
+.game-details__back-btn:hover {
+  color: #BF360C;
+}
+
+/* ============================================================================
+	# Modules - Theme switcher
+============================================================================= */
+.theme-switcher__radios {
+  line-height: 2.25em;
+  background: #EF6C00;
+}
+.theme-switcher__radios-item {
+  display: inline-block;
+  margin-right: 0.75em;
+}
+.theme-switcher__radios-item:last-child {
+  margin-right: 0;
+}
+
+/* ============================================================================
+	# States
+============================================================================= */
+.games-list__item.ng-enter.ng-enter-active,
+.games-list__item.ng-leave {
+  opacity: 1;
+  height: 80px;
+  overflow: hidden;
+}
+
+.games-list__item.ng-leave.ng-leave-active,
+.games-list__item.ng-enter {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.ng-enter.ng-enter-active .app-video-games,
+.ng-leave .app-video-games {
+  opacity: 1;
+  overflow: hidden;
+}
+
+.ng-leave.ng-leave-active .app-video-games,
+.ng-enter .app-video-games {
+  opacity: 0;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=app.css.map */

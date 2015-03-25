@@ -1,0 +1,18 @@
+/* ============================================================================
+	# Layout - Index
+============================================================================= */
+
+.wrapper {
+	@include container;
+	@include padding-leader(1.5);
+	@include padding-trailer(4, $base-font-size);
+
+	@include respond-to(small-up) {
+		padding : rhythm(1.5) 0 rhythm(4);
+	} // breakpoint small-up
+}  // .wrapper
+
+
+//  - Sticky Footer
+//  -----------------------------------
+@include sticky-footer(rhythm(3), ".wrapper", ".root-footer", ".main-footer");

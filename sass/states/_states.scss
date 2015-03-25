@@ -1,0 +1,33 @@
+/* ============================================================================
+	# States
+============================================================================= */
+
+
+//  -Animations
+//  -----------------------------------
+.games-list__item.ng-enter.ng-enter-active,
+.games-list__item.ng-leave {
+	opacity: 1;
+	height: 80px;
+	overflow: hidden;
+} // Animation
+
+.games-list__item.ng-leave.ng-leave-active,
+.games-list__item.ng-enter {
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+} // Animation
+
+
+.ng-enter.ng-enter-active .app-video-games,
+.ng-leave .app-video-games {
+	opacity: 1;
+	overflow: hidden;
+} // Animation
+
+.ng-leave.ng-leave-active .app-video-games,
+.ng-enter .app-video-games {
+	opacity: 0;
+	overflow: hidden;
+} // Animation

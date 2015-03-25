@@ -1,0 +1,164 @@
+/* ============================================================================
+	# Theme
+============================================================================= */
+/* ============================================================================
+	# Utilities - Colors
+============================================================================= */
+html {
+  background-color: #311B92;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #546E7A;
+  text-shadow: 1px 1px 0 #fff;
+  text-shadow: 1px 1px 0 0 #fff;
+}
+
+p {
+  color: #546E7A;
+}
+
+a {
+  color: #FF9100;
+}
+
+input {
+  color: #311B92;
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+input[type="text"]:-moz-placeholder {
+  color: #9C27B0;
+}
+input[type="text"]::-moz-placeholder {
+  color: #9C27B0;
+}
+input[type="text"]:-ms-input-placeholder {
+  color: #9C27B0;
+}
+input[type="text"]::-webkit-input-placeholder {
+  color: #9C27B0;
+}
+
+input[type="radio"] + label {
+  color: #311B92;
+}
+
+input[type="radio"] + label span {
+  background-color: #311B92;
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #FDF6E3;
+}
+
+select {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #311B92;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+footer {
+  background: #9C27B0;
+}
+footer a {
+  color: #311B92;
+}
+footer a:hover {
+  color: #FDF6E3;
+}
+
+.btn {
+  color: #FDF6E3;
+  background: #FF9100;
+}
+.btn:hover {
+  background: #311B92;
+}
+
+.search-bar {
+  color: #ECEFF1;
+  background: #9C27B0;
+}
+.search-bar__header h1 {
+  text-shadow: 2px 3px 0 #311B92;
+  text-shadow: 2px 3px 0 0 #311B92;
+  color: #ECEFF1;
+}
+.search-bar__header i {
+  text-shadow: -2px 3px 0 #311B92;
+  text-shadow: -2px 3px 0 0 #311B92;
+  color: #ECEFF1;
+}
+
+.games-list {
+  background: #ECEFF1;
+  opacity: .95;
+}
+.games-list__item {
+  border-bottom-color: #9C27B0;
+  opacity: .9;
+}
+.games-list__item:hover {
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  border-bottom-color: #fff;
+  background: #FDF6E3;
+  opacity: 1;
+}
+
+.game-card__image {
+  border: 1px solid #fff;
+}
+.game-card__info-name {
+  color: #FF9100;
+}
+.game-card__info-release-year {
+  color: #546E7A;
+}
+.game-card__info-release-year span {
+  color: #9C27B0;
+}
+.game-card__info-price {
+  color: #546E7A;
+}
+.game-card__info-price b {
+  color: #311B92;
+}
+
+.game-details {
+  background: #ECEFF1;
+}
+.game-details__name {
+  color: #9C27B0;
+}
+.game-details__info-image {
+  border: 1px solid #fff;
+}
+.game-details__info-release-year {
+  color: #546E7A;
+}
+.game-details__info-release-year span {
+  color: #9C27B0;
+}
+.game-details__info-price {
+  color: #546E7A;
+}
+.game-details__info-price b {
+  color: #311B92;
+}
+.game-details__back-btn {
+  text-shadow: 1px 1px 0 #FDF6E3;
+  text-shadow: 1px 1px 0 0 #FDF6E3;
+}
+.game-details__back-btn:hover {
+  color: #311B92;
+}
+
+.theme-switcher__radios {
+  background: #9C27B0;
+}
+
+/*# sourceMappingURL=app-theme-1.css.map */

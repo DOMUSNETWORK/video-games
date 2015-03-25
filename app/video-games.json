@@ -1,0 +1,50 @@
+[
+	{
+		"id": "uncharted-3",
+		"name": "Uncharted 3: Drake's Deception",
+		"release-year": 2011,
+		"price": 100,
+		"desc": "Uncharted 3: Drake's Deception takes gamers to a fabled city that, once discovered, will reveal its terrifying secrets, pushing Drake to the edge of sanity and fighting for his life!",
+		"image": "pics/uncharted-3.png"
+	},
+	{
+		"id": "mass-effect-2",
+		"name": "Mass Effect 2",
+		"release-year": 2010,
+		"price": 70,
+		"desc": "Two years after Commander Shepard repelled invading Reapers bent on the destruction of organic life, a mysterious new enemy has emerged. On the fringes of known space, something is silently abducting entire human colonies. Now Shepard must work with Cerberus, a ruthless organisation devoted to human survival at any cost, to stop the most terrifying threat mankind has ever faced. To even attempt this perilous mission, Shepard must assemble the galaxy's most elite team and command the most powerful ship ever built. Even then, they say it would be suicide. Commander Shepard intends to prove them wrong.",
+		"image": "pics/mass-effect-2.png"
+	},
+	{
+		"id": "monkey-island",
+		"name": "The Secret of Monkey Island: Special Edition",
+		"release-year": 2009,
+		"price": 40,
+		"desc": "The games that introduced a brand new generation of players to the exploits and misadventures of wannabe-pirate Guybrush Threepwood are back! For the first time ever, the Monkey Islandâ„¢ Special Edition Collection pack combines the critically acclaimed, and faithfully re-imagined, digital versions of The Secret of Monkey Islandâ„¢: Special Edition and Monkey Islandâ„¢ 2 Special Edition: LeChuckâ€™s Revenge into one swashbuckling retail pirate adventure package for Xbox 360, PlayStation 3 and PC.",
+		"image": "pics/monkey-island.png"
+	},
+	{
+		"id": "heroes-of-the-storm",
+		"name": "Heroes of the storm",
+		"release-year": 2015,
+		"price": 0,
+		"desc": "Heroes of the Storm is an upcoming multiplayer online battle arena video game developed by Blizzard Entertainment for Microsoft Windows and OS X.",
+		"image": "pics/heroes-of-the-storm.png"
+	},
+	{
+		"id": "league-of-legends",
+		"name": "League of Legends",
+		"release-year": 2009,
+		"price": 0,
+		"desc": "League of Legends is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and Mac OS X.",
+		"image": "pics/league-of-legends.png"
+	},
+	{
+		"id": "dota-2",
+		"name": "Dota 2",
+		"release-year": 2013,
+		"price": 0,
+		"desc": "Dota 2 is a 2013 multiplayer online battle arena video game and the stand-alone sequel to the Defense of the Ancients Warcraft III: Reign of Chaos and Warcraft III: The Frozen Throne mod.",
+		"image": "pics/dota-2.png"
+	}
+]

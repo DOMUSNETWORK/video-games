@@ -1,0 +1,11 @@
+/* ============================================================================
+	# Layout - Theme-switcher
+============================================================================= */
+
+.theme-switcher {
+	&__radios {
+		width: $module-theme-switcher-width;
+		min-width: $module-theme-switcher-min-width;
+		max-width: $module-theme-switcher-max-width;
+	} // &__radios
+} // .theme-switcher

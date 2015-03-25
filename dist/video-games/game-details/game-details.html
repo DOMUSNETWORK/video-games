@@ -1,0 +1,20 @@
+<div class="app-video-games">
+	<div class="game-details" ng-model="games">
+		<div class="game-details__navigation">
+			<a class="btn btn-left" href="#/video-games/{{detailsCtrl.prevGame}}"><i class="fa fa-chevron-left"></i></a>
+			<a class="btn btn-right" href="#/video-games/{{detailsCtrl.nextGame}}"><i class="fa fa-chevron-right"></i></a>
+		</div>
+
+		<h1 class="game-details__name">{{detailsCtrl.game.name}}</h1>
+
+		<div class="game-details__info">
+			<img class="game-details__info-image" ng-src="{{detailsCtrl.game.image}}" alt="{{detailsCtrl.game.name}}"/>
+			<h3 class="game-details__info-release-year">Release year: <span>{{ detailsCtrl.game["release-year"] }}</span></h3>
+			<span class="game-details__info-price">Price: <b>{{detailsCtrl.game.price | gamePrice}}</b></span>
+			<p class="game-details__info-desc">{{detailsCtrl.game.desc}}</p>
+		</div>
+
+		<a class="game-details__back-btn" href="#/video-games"><i class="fa fa-angle-double-left"></i> Back to search</a>
+	</div>
+</div>
+

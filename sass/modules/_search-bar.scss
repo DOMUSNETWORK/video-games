@@ -1,0 +1,90 @@
+/* ============================================================================
+	# Modules - Search-bar
+============================================================================= */
+
+.search-bar {
+	@extend %global-clear-fix;
+	@extend %center-elemets;
+	@extend %global-padding;
+	@extend %global-border-radius;
+	color: $color-search-body-text;
+	background: $color-search-background;
+
+	&__header {
+		@extend %full-width-and-float;
+		@extend %half-rhythm-marin-bottom;
+		position: relative;
+		padding-left: rhythm(2);
+
+		h1 {
+			@include single-text-shadow(2px, 3px, 0, 0, $color-search-header-shadow);
+			font-family : $font-family--logo;
+			color: $color-search-header-text;
+		} // h1
+
+		i {
+			@include adjust-font-size-to(36px, 1);
+			@include rotate(-45deg);
+			@include single-text-shadow(-2px, 3px, 0, 0, $color-search-header-shadow);
+			position: absolute;
+			top: 2px;
+			left: 0;
+			vertical-align: middle;
+			color: $color-search-header-text;
+		} // i
+	} // &__header
+
+	&__field {
+		@extend %full-rhythm-marin-bottom;
+		@extend %full-width-and-float;
+		position: relative;
+
+		&-icon {
+			@extend %global-center-text;
+			width: rhythm(2);
+			position : absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+
+			i {
+				@include adjust-font-size-to($base-line-height, 2);
+				vertical-align: middle;
+			} // i
+		} // &-icon
+	} // &__field
+
+	&__options {
+		@extend %full-width-and-float;
+		@extend %half-rhythm-marin-bottom;
+		text-align: right;
+	}
+
+	&__radios {
+		@extend %full-width-and-float;
+		@extend %global-center-text;
+		line-height: rhythm(1.5);
+
+		&-item {
+			display : inline-block;
+			margin-right: rhythm(0.5);
+
+			&:last-child { margin-right: 0; } // &:last-child
+		} // &-item
+	} // &__radios
+
+
+	@include respond-to(small-up){
+		&__options {
+			width: auto;
+			margin-bottom: 0;
+			text-align: left;
+		} // &__options
+
+		&__radios {
+			width: auto;
+			margin-left: rhythm(1);
+			text-align: left;
+		} // &__radios
+	} // breakpoint small-up
+} // .search-bar

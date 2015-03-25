@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7" ng-controller="themeController as themeCtrl"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8" ng-controller="themeController as themeCtrl"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9" ng-controller="themeController as themeCtrl"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js" ng-controller="themeController as themeCtrl"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Video games</title>
+	<meta name="description" content="Video games search application">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+	<link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" ng-href="{{ themeCtrl.css }}.css">
+
+	<script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+	<div class="theme-switcher">
+		<div class="theme-switcher__radios">
+			<div class="theme-switcher__radios-item" ng-repeat="theme in themeCtrl.themes">
+				<input type="radio" ng-model="themeCtrl.css" id="{{theme.id}}" name="theme" value="{{theme.css}}"/>
+				<label for="{{theme.id}}"><span></span>{{theme.name}}</label>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">
+
+
+		<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please
+			<a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+
+		<div ng-animate="'animate'" ng-view></div>
+
+		<div class="root_footer"></div>
+	</div>
+
+	<footer class="main-footer">
+		<a href="#"><i class="fa fa-github fa-lg"></i>&nbsp;GitHub Project</a>
+	</footer>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.28/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.28/angular-route.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.28/angular-animate.min.js"></script>
+
+
+	<script src="app.js"></script>
+
+</body>
+</html>

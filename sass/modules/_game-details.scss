@@ -1,0 +1,59 @@
+/* ============================================================================
+	# Modules - Game-details
+============================================================================= */
+
+.game-details {
+	@extend %global-clear-fix;
+	@extend %full-rhythm-marin-bottom;
+	@extend %center-elemets;
+	@extend %global-padding;
+	@extend %global-border-radius;
+	background: $color-game-details-container-background;
+
+	&__navigation {
+		@extend %full-width-and-float;
+		@extend %half-rhythm-marin-bottom;
+	} // &__navigation
+
+	&__name {
+		@extend %full-width-and-float;
+		@extend %global-center-text;
+		@include margin-trailer(1, $header-1);
+		color: $color-game-details-name;
+	} // &__name
+
+	&__info {
+		@extend %global-clear-fix;
+		float: left;
+
+		&-image {
+			@extend %game-image;
+			max-width: $module-game-details-image-max-width;
+			border: 1px solid $color-game-details-image-border;
+		} // &-image
+
+		&-release-year {
+			color: $color-game-details-info-release;
+
+			span { color: $color-game-details-info-release-year; } // span
+		} // &-release-year
+
+		&-price {
+			@extend %game-price;
+			color: $color-game-details-info-price;
+
+			b { color: $color-game-details-info-price-currency; } // b
+		} // &-price
+
+		&-desc { @include leader(0.5); } // &-desc
+	} // &__info
+
+	&__back-btn {
+		@extend %full-width-and-float;
+		@include margin-leader;
+		@include single-text-shadow(1px, 1px, 0, 0, $color-game-details-back-btn-shadow);
+		display: block;
+
+		&:hover { color: $color-game-details-back-btn-hover; }
+	} // &__back-btn
+} // .game-details
