@@ -9,7 +9,7 @@ If you're not familiar with angular-seed check out their awesome documentation a
 I think I met all of the goals described below and I've added some extra features such as:<br />
 Theme switcher<br />
 Inner page navigation<br />
-Three extra games to the '.json' file since it was boring working only with 3 games displaying :)<br />
+Three extra games to the '.json' file since it was boring to work with only 3 games displayed :)<br />
 
 <b>The tools I've used for this app are:</b>
 
@@ -79,10 +79,10 @@ git clone https://github.com/DOMUSNETWORK/video-games.git
 
 angular-seed have preconfigured `npm` to automatically run `bower`,<br/>
 though since I've added `Heroku` deployment support via `express` server it is now necessary<br />
-to run `bower install` manually and then start a `node` server if you wish to run locally.
+to run the express server if you wish to run locally.
 
 ```
-bower install
+npm install
 ```
 
 
@@ -90,14 +90,21 @@ bower install
 
 Angular-seed have a preconfigured `http-server` simple development web server,<br />
 For easy `Heroku` deployment I had to switch it to `express`,<br />
-The simplest way to start this server is:
+Now you have both options to run locally, one is:
 
 ```
 node server.js
 ```
 
-Now browse to the app at `http://localhost:3000`.
+And browse to the app at `http://localhost:3000`.
 
+The second is:
+
+```
+npm start
+```
+
+And browse to the app at `http://localhost:8000/app`.
 
 ### Production Build
 
