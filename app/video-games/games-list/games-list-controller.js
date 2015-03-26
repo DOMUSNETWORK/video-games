@@ -5,7 +5,10 @@ videoGames
 	.controller('GamesListController', ['GamesFetcher', function (GamesFetcher) {
 	var self = this;
 
-	self.games = GamesFetcher.get();
+	GamesFetcher.async().then(function() {
+		self.games = GamesFetcher.games();
+	});
+
 	self.gamesOrder = 'price';
 	self.direction = 'reverse';
 

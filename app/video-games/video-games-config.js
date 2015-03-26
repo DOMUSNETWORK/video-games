@@ -8,7 +8,7 @@ videoGames
 				templateUrl: 'video-games/games-list/games-list.html',
 				resolve    : {
 					async: ['GamesFetcher', function (GamesFetcher) {
-						return GamesFetcher.get();
+						return GamesFetcher.async();
 					}]
 				},
 				controller : 'GamesListController as listCtrl'
@@ -17,7 +17,7 @@ videoGames
 				templateUrl: 'video-games/game-details/game-details.html',
 				resolve    : {
 					async: ['GamesFetcher', function (GamesFetcher) {
-						return GamesFetcher.get();
+						return GamesFetcher.async();
 					}]
 				},
 				controller : 'GameDetailsController  as detailsCtrl'
