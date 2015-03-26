@@ -168,6 +168,7 @@ npm run protractor
 <b>* Work on the Gruntfile, it's not good enough - should add css minifier and some other stuff</b><br />
 <b>* Change direct links to functions using $location on controllers</b><br />
 <b>* enable html5 mode to disable hashtags and configure express to serve proper paths</b><br />
+<b>* remove require for css.map from dist build</b><br />
 
 
 ## Thanks to:
