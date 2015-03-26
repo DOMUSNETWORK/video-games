@@ -141,16 +141,16 @@ html {
 }
 
 html {
-  -moz-transition: all 650ms ease-out;
-  -o-transition: all 650ms ease-out;
-  -webkit-transition: all 650ms ease-out;
-  transition: all 650ms ease-out;
-  background-color: #BF360C;
   min-height: 100%;
   height: auto;
 }
 
 body {
+  -moz-transition: all 650ms ease-out;
+  -o-transition: all 650ms ease-out;
+  -webkit-transition: all 650ms ease-out;
+  transition: all 650ms ease-out;
+  background-color: #BF360C;
   position: relative;
   font-size: 16px;
   line-height: 1.5;

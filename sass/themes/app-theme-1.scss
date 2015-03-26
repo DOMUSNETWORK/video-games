@@ -30,7 +30,7 @@ $black-opaque-4: rgba(0,0,0,0.4);
 
 //  - Base
 //  -----------------------------------
-html { background-color: $color-site-background; } // html
+body { background-color: $color-site-background; } // body
 
 #{headings(1,6)} {
 	color: $color-base-text;
