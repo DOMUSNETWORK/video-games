@@ -171,8 +171,6 @@ this app is based on his angular course and was a great starting point for divin
 
 <b>Shyam Seshadri & Brad Green</b> - For their super-awesome book, ['AngularJS Up & Running'](http://shop.oreilly.com/product/0636920033486.do/),<br />
 which I highly recommend for anyone who's struggling with angular.
-<br />
-<br />
 
 
 
