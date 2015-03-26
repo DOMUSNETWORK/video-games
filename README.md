@@ -1,25 +1,28 @@
 # Simple video games search application
 
-This project is a simple application for searching games built with angualr-seed and created to play around with angularJS.<br />
+This project is a simple angular app for searching games, you can checkout the [DEMO](http://video-games.herokuapp.com) here,<br />
+it uses the angualr-seed framework and created for playing around with angularJS.<br />
+
 If you're not familiar with angular-seed check out their awesome documentation at:
 [angular/angular-seed](https://github.com/angular/angular-seed)<br />
 
 I think I met all of the goals described below and I've added some extra features such as:<br />
 Theme switcher<br />
 Inner page navigation<br />
-And 3 extra games to the '.json' file since it was boring working with only 3 games displaying :)<br />
+Three extra games to the '.json' file since it was boring working only with 3 games displaying :)<br />
 
-The tools I've used for this project are:<br />
+<b>The tools I've used for this app are:</b>
+
 [AngularJS](https://angularjs.org/)<br />
 [Angular-seed](https://github.com/angular/angular-seed)<br />
 [Sass](http://sass-lang.com/)<br />
 [Compass](http://compass-style.org/)<br />
 [Susy](http://susy.oddbird.net/)<br />
 [Breakpoint](http://breakpoint-sass.com/)<br />
-[Grunt](http://gruntjs.com/)
+[GruntJS](http://gruntjs.com/)<br />
 
 
-## Project Goals
+## Project Brief
 
 The objective of the exercise is to create an Angular (Or any other framework, home made code) application displaying video games.<br />
 You will use the attached json file as data source, along with the associated pictures.<br />
@@ -63,7 +66,7 @@ Responsive<br />
 To get you started you can simply clone the video-games repository and install the dependencies.
 
 
-### Clone video-games
+### Clone git repository
 
 Clone the video-games repository using [git][git]:
 
@@ -74,23 +77,26 @@ git clone https://github.com/DOMUSNETWORK/video-games.git
 
 ### Install Dependencies
 
-angular-seed have preconfigured `npm` to automatically run `bower` so we can simply do:
+angular-seed have preconfigured `npm` to automatically run `bower`,<br/>
+though since I've added `Heroku` deployment support via `express` server it is now necessary<br />
+to run `bower install` manually and then start a `node` server if you wish to run locally.
 
 ```
-npm install
+bower install
 ```
 
 
 ### Run the Application
 
-Angular-seed have preconfigured the project with a simple development web server.
+Angular-seed have a preconfigured `http-server` simple development web server,<br />
+For easy `Heroku` deployment I had to switch it to `express`,<br />
 The simplest way to start this server is:
 
 ```
-npm start
+node server.js
 ```
 
-Now browse to the app at `http://localhost:8000/app/index.html`.
+Now browse to the app at `http://localhost:3000`.
 
 
 ### Production Build
@@ -101,13 +107,14 @@ We utilize the grunt task manager to build our app for production. To start the 
 grunt
 ```
 
-At this point the 'disp' directory will be created at the root of the project with all the necessary files for deployment.
+At this point the 'disp' directory will be created at the root of the project with all the necessary files for deployment,<br />
+I'm still working on this part so don't get upset if it's lacking features and proper structure.
 
 
 ### Compile SASS
 
 I've used Webstorm's built-in compass/sass file watcher to compile my sass files.<br/>
-of course you can just use 'compass' directly from terminal or run it through a grunt-task.
+of course you can just use 'compass' directly from terminal or add it as a grunt-task.
 
 
 ### Running Unit Tests
@@ -130,7 +137,7 @@ First our web server needs to be serving up the application, so that Protractor
 can interact with it.
 
 ```
-npm start
+node server.js
 ```
 
 In addition, since Protractor is built upon WebDriver we need to install it:
@@ -147,12 +154,23 @@ npm run protractor
 
 # TODO:
 
-<b>Add Unit tests</b><br />
-<b>Add integration tests</b><br />
-<b>Add End-to-End tests</b><br />
-<b>Check for cross browser compatibility</b><br />
-<b>Work on the Gruntfile, it's not good enough - should add css minifier and some other stuff</b><br />
+<b>* Add Unit tests</b><br />
+<b>* Add integration tests</b><br />
+<b>* Add End-to-End tests</b><br />
+<b>* Check for cross browser compatibility</b><br />
+<b>* Work on the Gruntfile, it's not good enough - should add css minifier and some other stuff</b><br />
+<b>* Fix Heroku deployment, it get's the development version of the app, it needs to deploy the production version</b><br />
+<b>* Change direct links to functions using $location on controllers</b><br />
 
+
+## Thanks to:
+<b>Ray Villalobos</b> - from [Lynda.com](http://Lynda.com) for his awesome tutorials,<br />
+this app is based on his angular course and was a great starting point for diving into angular.<br />
+
+<b>Alex Vanston</b> - from [team Treehouse](http://teamtreehouse.com/) for his great angular course.<br />
+
+<b>Shyam Seshadri & Brad Green</b> - For their super-awesome book, ['AngularJS Up & Running'](http://shop.oreilly.com/product/0636920033486.do/),<br />
+which I highly recommend for anyone who's struggling with angular.
 <br />
 <br />
 

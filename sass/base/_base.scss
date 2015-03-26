@@ -18,6 +18,7 @@
 * { @include box-sizing(border-box); } // *
 
 html {
+	@include single-transition(all, 650ms, ease-out);
 	background-color: $color-site-background;
 	min-height: 100%;
 	height: auto;
