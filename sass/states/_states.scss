@@ -8,14 +8,12 @@
 .games-list__item.ng-enter.ng-enter-active,
 .games-list__item.ng-leave {
 	opacity: 1;
-	height: 80px;
 	overflow: hidden;
 } // Animation
 
 .games-list__item.ng-leave.ng-leave-active,
 .games-list__item.ng-enter {
 	opacity: 0;
-	height: 0;
 	overflow: hidden;
 } // Animation
 
