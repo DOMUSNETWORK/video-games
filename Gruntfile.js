@@ -43,7 +43,7 @@ module.exports = function (grunt) {
 					{expand: true, cwd: 'app/', src: ['**/*.html', '!bower_components/**/*.html', '!index.html'], dest: 'dist/'},
 					{expand: true, cwd: 'app/', src: ['video-games.json'], dest: 'dist/'},
 					{expand: true, cwd: 'app/', src: ['pics/*.png'], dest: 'dist/'},
-					{expand: true, cwd: 'app/', src: ['bower_components/html5-boilerplate/css/*.css', 'bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js'], dest: 'dist/'}
+					{expand: true, flatten: true, cwd: 'app/', src: ['bower_components/html5-boilerplate/css/*.css', 'bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js'], dest: 'dist/boilerplate'}
 				]
 			}
 		},
