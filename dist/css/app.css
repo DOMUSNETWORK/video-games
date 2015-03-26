@@ -141,6 +141,10 @@ html {
 }
 
 html {
+  -moz-transition: all 650ms ease-out;
+  -o-transition: all 650ms ease-out;
+  -webkit-transition: all 650ms ease-out;
+  transition: all 650ms ease-out;
   background-color: #BF360C;
   min-height: 100%;
   height: auto;
@@ -186,6 +190,8 @@ a {
 }
 
 input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   line-height: 1.5em;
   font-family: "Francois One", "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
@@ -285,6 +291,10 @@ footer a:hover {
 /* ============================================================================
 	# Base - Index
 ============================================================================= */
+.container {
+  overflow: hidden;
+}
+
 .app-video-games {
   -moz-transition: all 650ms ease-out;
   -o-transition: all 650ms ease-out;
@@ -638,19 +648,17 @@ html, body {
 }
 
 /* ============================================================================
-	# States
+	# States - Animations
 ============================================================================= */
 .games-list__item.ng-enter.ng-enter-active,
 .games-list__item.ng-leave {
   opacity: 1;
-  height: 80px;
   overflow: hidden;
 }
 
 .games-list__item.ng-leave.ng-leave-active,
 .games-list__item.ng-enter {
   opacity: 0;
-  height: 0;
   overflow: hidden;
 }
 

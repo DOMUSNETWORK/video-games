@@ -25,9 +25,5 @@ videoGames
 				self.nextGame = gamesArr[0].id;
 			}
 		});
-
-
-
-
 	}]);
 

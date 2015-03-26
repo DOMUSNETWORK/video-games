@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 					'dist/app.js': [ 'dist/app.js' ]
 				},
 				options: {
-					mangle: false
+					mangle: true
 				}
 			}
 		},

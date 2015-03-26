@@ -89,8 +89,8 @@ npm install
 ### Run the Application
 
 Angular-seed have a preconfigured `http-server` simple development web server,<br />
-For easy `Heroku` deployment I had to switch it to `express`,<br />
-Now you have both options to run locally, one is:
+For easy `Heroku` deployment I needed to add `express`,<br />
+you have both options to run locally, one is for production and it serves from /dist:
 
 ```
 node server.js
@@ -98,7 +98,7 @@ node server.js
 
 And browse to the app at `http://localhost:3000`.
 
-The second is:
+The second is for development and serves from /app:
 
 ```
 npm start
@@ -166,8 +166,8 @@ npm run protractor
 <b>* Add End-to-End tests</b><br />
 <b>* Check for cross browser compatibility</b><br />
 <b>* Work on the Gruntfile, it's not good enough - should add css minifier and some other stuff</b><br />
-<b>* Fix Heroku deployment, it get's the development version of the app, it needs to deploy the production version</b><br />
 <b>* Change direct links to functions using $location on controllers</b><br />
+<b>* enable html5 mode to disable hashtags and configure express to serve proper paths</b><br />
 
 
 ## Thanks to:

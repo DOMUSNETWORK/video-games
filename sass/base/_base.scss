@@ -52,6 +52,7 @@ a {
 } // a
 
 input {
+	@include appearance(none);
 	line-height: rhythm(1);
 	font-family: $font-family--primary;
 	width: 100%;

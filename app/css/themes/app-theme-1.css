@@ -5,7 +5,7 @@
 	# Utilities - Colors
 ============================================================================= */
 html {
-  background-color: #311B92;
+  background-color: #283593;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +23,7 @@ a {
 }
 
 input {
-  color: #311B92;
+  color: #283593;
   background: rgba(255, 255, 255, 0.4);
   border-color: rgba(255, 255, 255, 0.2);
 }
@@ -42,11 +42,11 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 input[type="radio"] + label {
-  color: #311B92;
+  color: #283593;
 }
 
 input[type="radio"] + label span {
-  background-color: #311B92;
+  background-color: #283593;
 }
 
 input[type="radio"]:checked + label span {
@@ -55,7 +55,7 @@ input[type="radio"]:checked + label span {
 
 select {
   border-color: rgba(255, 255, 255, 0.2);
-  color: #311B92;
+  color: #283593;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -63,7 +63,7 @@ footer {
   background: #9C27B0;
 }
 footer a {
-  color: #311B92;
+  color: #283593;
 }
 footer a:hover {
   color: #FDF6E3;
@@ -74,7 +74,7 @@ footer a:hover {
   background: #FF9100;
 }
 .btn:hover {
-  background: #311B92;
+  background: #283593;
 }
 
 .search-bar {
@@ -82,13 +82,13 @@ footer a:hover {
   background: #9C27B0;
 }
 .search-bar__header h1 {
-  text-shadow: 2px 3px 0 #311B92;
-  text-shadow: 2px 3px 0 0 #311B92;
+  text-shadow: 2px 3px 0 #283593;
+  text-shadow: 2px 3px 0 0 #283593;
   color: #ECEFF1;
 }
 .search-bar__header i {
-  text-shadow: -2px 3px 0 #311B92;
-  text-shadow: -2px 3px 0 0 #311B92;
+  text-shadow: -2px 3px 0 #283593;
+  text-shadow: -2px 3px 0 0 #283593;
   color: #ECEFF1;
 }
 
@@ -125,7 +125,7 @@ footer a:hover {
   color: #546E7A;
 }
 .game-card__info-price b {
-  color: #311B92;
+  color: #283593;
 }
 
 .game-details {
@@ -147,14 +147,14 @@ footer a:hover {
   color: #546E7A;
 }
 .game-details__info-price b {
-  color: #311B92;
+  color: #283593;
 }
 .game-details__back-btn {
   text-shadow: 1px 1px 0 #FDF6E3;
   text-shadow: 1px 1px 0 0 #FDF6E3;
 }
 .game-details__back-btn:hover {
-  color: #311B92;
+  color: #283593;
 }
 
 .theme-switcher__radios {

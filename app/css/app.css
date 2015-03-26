@@ -190,6 +190,8 @@ a {
 }
 
 input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   line-height: 1.5em;
   font-family: "Francois One", "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
@@ -289,6 +291,10 @@ footer a:hover {
 /* ============================================================================
 	# Base - Index
 ============================================================================= */
+.container {
+  overflow: hidden;
+}
+
 .app-video-games {
   -moz-transition: all 650ms ease-out;
   -o-transition: all 650ms ease-out;
@@ -642,7 +648,7 @@ html, body {
 }
 
 /* ============================================================================
-	# States
+	# States - Animations
 ============================================================================= */
 .games-list__item.ng-enter.ng-enter-active,
 .games-list__item.ng-leave {
